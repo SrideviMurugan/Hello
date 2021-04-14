@@ -1,0 +1,13 @@
+a=0
+b=1
+c=1
+print("The fibonacci series are......")
+n=int(input("Enter the no of terms:"))
+print(a,b,end="\t")
+for i in range(0,n):
+  if n>0:
+    c=a+b
+    a=b
+    b=c
+    print(c,end="\t")
+    i=+1
