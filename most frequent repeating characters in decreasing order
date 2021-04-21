@@ -1,7 +1,7 @@
 from collections import Counter
 from heapq import nlargest
 
-def ordered_letters(s, n=4):
+def most_frequent(s, n=4):
     ctr = Counter(c.lower() for c in s if c.isalpha())
 
     def sort_key(x):
@@ -10,4 +10,4 @@ def ordered_letters(s, n=4):
     for idx, (letter, count) in enumerate(nlargest(n, ctr.items(), key=sort_key), 1):
         print(idx, 'Most frequent:', letter, '|', 'Appearances:', count)
 
-ordered_letters("MISSISIPPI")
+most_frequent("MISSISIPPI")
