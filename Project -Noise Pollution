@@ -1,0 +1,6 @@
+print("Project: Noise pollution.") 
+decibel=float(input()) 
+if(decibel>=60): 
+      print("Noise pollution occur at",decibel,"db") 
+else: 
+      print ("No noise pollution occur")
